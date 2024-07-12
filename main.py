@@ -4,17 +4,15 @@ import seaborn as sns
 from matplotlib import pyplot as plt
 
 # Exemple d'utilisation de numpy
-matrice = np.random.randn(3, 4)
+matrice = np.random.randn(10, 10)
 print(f"Ma matrice:\n {matrice}")
 
 # Exemple d'utilisation de pandas
-dataPandas = {'Name': ['Alice', 'Bob', 'Charlie'],
-              'Age': [25, 30, 35]}
+dataPandas = {'Name': ['Alice', 'Bob', 'Charlie', 'Tom'],
+              'Age': [25, 30, 35, 18]}
 print(pd.DataFrame(dataPandas))
 
-# Générateur random data
-data = np.random.rand(10, 10)
 # Création d'un heatmap
-sns.heatmap(data)
-plt.title('Exemple de Heatmap')
+sns.heatmap(matrice)
+plt.title('Exemple de Heatmap en utilisant la Matrice')
 plt.show()
